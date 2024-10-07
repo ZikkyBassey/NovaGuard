@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff9800;
+            animation: fadeIn 2s ease-in;
+        }
+        header h1 {
+            color: #ff9800;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1f1f1f;
+        }
+        nav a {
+            color: #ff9800;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+        nav a:hover {
+            color: #ffa500;
+            text-decoration: underline;
+            transition: color 0.3s ease-in-out;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .course-topic {
+            background-color: #2b2b2b;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: left;
+            position: relative;
+        }
+        .course-topic h3 {
+            color: #ff9800;
+        }
+        .complete-btn {
+            background-color: #ff9800;
+            border: none;
+            color: #121212;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .complete-btn:hover {
+            background-color: #ffa500;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Courses</h1></header>
+    <nav>
+        <a href="/"><i class="fas fa-home"></i> Home</a> | 
+        <a href="/about"><i class="fas fa-info-circle"></i> About</a> | 
+        <a href="/contact"><i class="fas fa-envelope"></i> Contact Us</a> | 
+        <a href="/courses"><i class="fas fa-graduation-cap"></i> Courses</a>
+    </nav>
+    <main>
+        <h2>Course Topics</h2>
+
+        <div class="course-topic">
+            <h3>1. Introduction to Web3</h3>
+            <p>Understanding the basics of Web3 and decentralized technologies.</p>
+            <button class="complete-btn">Complete</button>
+        </div>
+        
+        <div class="course-topic">
+            <h3>2. Blockchain Fundamentals</h3>
+            <p>Explore blockchain structures, consensus mechanisms, and security.</p>
+            <button class="complete-btn">Complete</button>
+        </div>
+        
+        <div class="course-topic">
+            <h3>3. Smart Contracts on Solana</h3>
+            <p>Learn how to create and deploy smart contracts on the Solana blockchain.</p>
+            <button class="complete-btn">Complete</button>
+        </div>
+        
+        <div class="course-topic">
+            <h3>4. Decentralized Finance (DeFi)</h3>
+            <p>Dive into DeFi protocols and learn how to use DeFi applications.</p>
+            <button class="complete-btn">Complete</button>
+        </div>
+
+        <!-- Add more topics as needed -->
+        
+    </main>
+</body>
+</html>
